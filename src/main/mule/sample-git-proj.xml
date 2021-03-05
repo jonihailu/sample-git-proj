@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="sample-git-projFlow" doc:id="3872ecd4-7de4-4d4f-a263-0e556fb5a61a" >
 		<http:listener doc:name="Listener" doc:id="78bb61a6-3267-45e9-91b0-f2c11885e3c3" config-ref="HTTP_Listener_config" path="/samplegit"/>
-		<logger level="INFO" doc:name="Logger" doc:id="dbe7e8e3-269b-404d-970a-b1fdd157cb7e" message="I am trying git if works well"/>
+		<logger level="INFO" doc:name="Logger" doc:id="dbe7e8e3-269b-404d-970a-b1fdd157cb7e" message="I am trying git if works well: #[payload]"/>
 	</flow>
 </mule>
